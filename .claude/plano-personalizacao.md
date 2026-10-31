@@ -9,7 +9,7 @@ Dois repositórios, com papéis que não se misturam:
 
 | Repo | Papel |
 |---|---|
-| `mtci-openedx` (este fork, branch `ulmo`) | Upstream intocado. Só recebe merges de `upstream/release/ulmo`, principalmente correções de segurança. |
+| `mtci-openedx` (este fork, branch `main`) | Upstream intocado. A `main` só recebe merges da release em uso, hoje `upstream/release/ulmo`, principalmente correções de segurança. Na troca de release, passa a receber a seguinte. |
 | `mtci-custom` (a criar, em `~/Documents/code/mtci-custom`) | Tudo que é nosso: sites, design, plugins, XBlocks, MFE slots, tema, infra Tutor. |
 
 O core do `edx-platform` não é editado. Se não houver filter, event ou plugin slot
@@ -120,7 +120,7 @@ tutor dev run lms pytest <caminho>                # testes sempre dentro do cont
 | `security-reviewer` | agente, só leitura | Escaping Mako, authz de views/handlers, course keys. |
 | `novo-site` | skill | Criar `sites/<site>.yml`, `tutor config save`, `sync_sites`. |
 | `nova-marca` | skill | Gerar `tokens/sites/<site>` e assets a partir de cor, logo e fonte. |
-| `sync-upstream` | skill | Merge de `upstream/release/ulmo` no fork e testes. |
+| `sync-upstream` | skill | Merge de `upstream/release/ulmo` na `main` do fork e testes. |
 
 ## Commits e PRs
 
