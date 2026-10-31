@@ -1,0 +1,12 @@
+{
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "permissions": {
+    "deny": [
+      "Read(~/Library/Application Support/tutor/config.yml)",
+      "Read(~/Library/Application Support/tutor/env/**)"
+    ]
+  }
+}
